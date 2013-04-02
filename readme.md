@@ -1,6 +1,6 @@
 # jquery.line.js
 
-* uses AMD `define()` ✓
+* uses [requirejs](http://requirejs.org/)([github](https://github.com/jrburke/requirejs)) / AMD `define()` ✓
 * uses jQuery ✓
 
 ## Purpose
@@ -10,5 +10,7 @@ Makes a horizontal red line appear `x` pixels from the top of the browser window
 ## Usage
 
 ```javascript
-$("body").line(40);
+require(["jquery","jquery-line"], function($){
+    $("body").line(40);
+});
 ```
